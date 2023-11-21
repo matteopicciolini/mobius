@@ -60,6 +60,24 @@ div {
 }
 </style>
 <script>
+    // Recupera il valore corrente del contatore di visite dal localStorage
+    var visits = localStorage.getItem('visits');
+
+    // Verifica se il contatore è stato inizializzato
+    if (!visits) {
+    visits = 0;
+    }
+
+    // Incrementa il contatore di visite
+    visits++;
+    
+    // Aggiorna il valore del contatore nella pagina
+    document.getElementById('visitsCount').textContent = visits;
+
+    // Salva il valore aggiornato nel localStorage
+    localStorage.setItem('visits', visits);
+
+
     function changeFontSize(action) {
       var textElement = document.getElementById('text');
       var currentSize = window.getComputedStyle(textElement, null).getPropertyValue('font-size');
@@ -247,7 +265,12 @@ and is wrapped around the whole page content, except for the footer in this exam
           <i style="font-size:25px; padding:3px" class="fa fa-telegram"></i> 
         </a>
 
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmatteopicciolini.github.io%2Fmobius%2FPosts%2Fchopin%2F" target="_blank" class="w3-button w3-round-large w3-facebook">
+            <i style="font-size:25px; padding:3px" class="fa fa-facebook"></i> 
+        </a>
       </div>
+      <p> Questo post è stato letto <span id="visitsCount">0</span> volte</p>
   </div>
   
 <!-- END BLOG ENTRIES -->
