@@ -58,24 +58,16 @@ div {
         width: 100%;
     }
 }
+
+.header-band {
+    border-radius: 20px;
+    background-color: #f1f1f1; 
+    padding: 2px; 
+    text-align: right; 
+}
 </style>
 <script>
-    // Recupera il valore corrente del contatore di visite dal localStorage
-    var visits = localStorage.getItem('visits');
-
-    // Verifica se il contatore è stato inizializzato
-    if (!visits) {
-    visits = 0;
-    }
-
-    // Incrementa il contatore di visite
-    visits++;
     
-    // Aggiorna il valore del contatore nella pagina
-    document.getElementById('visitsCount').textContent = visits;
-
-    // Salva il valore aggiornato nel localStorage
-    localStorage.setItem('visits', visits);
 
 
     function changeFontSize(action) {
@@ -115,11 +107,21 @@ and is wrapped around the whole page content, except for the footer in this exam
   <!-- Blog entry -->
   <div class="w3-card-4 w3-margin w3-white">
   <img src="../../Images/nocturne.png" alt="Norway" style="width:100%">
+  
     <div class="w3-container">
+        <div class="header-band">
+            <button class="w3-button w3-round-large" onclick="changeFontSize('increase')">
+                <i style="font-size:20px;" class="fa fa-search-plus"></i>
+            </button>
+            <button class="w3-button w3-round-large" onclick="changeFontSize('decrease')">
+                <i style="font-size:20px;" class="fa fa-search-minus"></i>
+            </button>
+            <button style= "margin-right:10px" class="w3-button w3-round-large">Visite: <span id="visitsCount">0</span></button>
+        </div>
       <h3><b>Frédéric Chopin e il senso della sofferenza</b></h3>
       <h5>Matteo Picciolini, <span class="w3-opacity">20 Novembre 2023</span></h5>
-      <button onclick="changeFontSize('increase')"><i class="fa fa-search-plus"></i></button>
-    <button onclick="changeFontSize('decrease')"><i class="fa fa-search-minus"></i></button>
+      
+      
     
     </div>
     
@@ -270,7 +272,7 @@ and is wrapped around the whole page content, except for the footer in this exam
             <i style="font-size:25px; padding:3px" class="fa fa-facebook"></i> 
         </a>
       </div>
-      <p> Questo post è stato letto <span id="visitsCount">0</span> volte</p>
+      
   </div>
   
 <!-- END BLOG ENTRIES -->
@@ -282,7 +284,34 @@ and is wrapped around the whole page content, except for the footer in this exam
 <!-- END w3-content -->
 </div>
 
+<script>
+    function getCurrentDate() {
+            const now = new Date();
+            const year = now.getFullYear();
+            const month = String(now.getMonth() + 1).padStart(2, '0');
+            const day = String(now.getDate()).padStart(2, '0');
+            return `${year}-${month}-${day}`;
+        }
 
+        
+        function getVisits() {
+            const lastVisitDate = localStorage.getItem('lastVisitDate');
+            const currentDate = getCurrentDate();
+
+            if (lastVisitDate !== currentDate) {
+                let visits = localStorage.getItem('visits') || 0;
+                visits++;
+                localStorage.setItem('visits', visits);
+                localStorage.setItem('lastVisitDate', currentDate);
+            }
+
+
+            const totalVisits = localStorage.getItem('visits') || 0;
+            document.getElementById('visitsCount').textContent = totalVisits;
+        }
+
+        getVisits();
+</script>
 <!-- Footer -->
 <footer  style = "padding-top: 50px;" class="w3-container w3-theme-d1 w3-center w3-black">
     <!--
