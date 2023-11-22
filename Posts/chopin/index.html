@@ -66,6 +66,10 @@ div {
     padding: 2px; 
     text-align: right; 
 }
+.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
 </style>
 <script>
     
@@ -84,6 +88,15 @@ div {
 
       textElement.style.fontSize = currentSize + 'px';
     }
+
+    function toggleDarkMode() {
+            var body = document.getElementById('card');
+            body.classList.toggle('dark-theme');
+            body.classList.toggle('w3-white');
+            // Aggiorna l'icona del pulsante in base allo stato corrente
+            var darkModeIcon = document.getElementById('darkModeIcon');
+            darkModeIcon.className = body.classList.contains('dark-theme') ? 'fa fa-sun' : 'fa fa-moon';
+        }
   </script>
 </head>
 <body class="w3-light-grey">
@@ -106,11 +119,14 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 
   <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-card-4 w3-margin w3-white" id = "card">
   <img src="../../Images/nocturne.png" alt="Norway" style="width:100%">
   
     <div class="w3-container">
         <div class="header-band">
+            <button class="w3-button w3-round-large" onclick="toggleDarkMode()">
+                <i style="font-size:20px;" class="fa " id="darkModeIcon"></i>
+            </button>
             <button class="w3-button w3-round-large" onclick="changeFontSize('increase')">
                 <i style="font-size:20px;" class="fa fa-search-plus"></i>
             </button>
