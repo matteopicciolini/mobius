@@ -10,7 +10,7 @@
 <link rel="icon" type="image/x-icon" href="https://matteopicciolini.github.io/mobius/Images/favicon.ico">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 div {
@@ -60,11 +60,12 @@ div {
 }
 
 .header-band {
+    justify-content: center;
     margin-top:10px;
     border-radius: 20px;
     background-color: #f1f1f1; 
     padding: 2px; 
-    text-align: right; 
+    text-align: center; 
 }
 .dark-theme {
     background-color: #333;
@@ -125,15 +126,15 @@ and is wrapped around the whole page content, except for the footer in this exam
     <div class="w3-container">
         <div class="header-band">
             <button class="w3-button w3-round-large" onclick="toggleDarkMode()">
-                <i style="font-size:20px;" class="fa " id="darkModeIcon"></i>
+                <i style="font-size:20px;  color: black;" class="fas fa-moon" id="darkModeIcon"></i>
             </button>
             <button class="w3-button w3-round-large" onclick="changeFontSize('increase')">
-                <i style="font-size:20px;" class="fa fa-search-plus"></i>
+                <i style="font-size:20px;  color: black;" class="fa fa-search-plus"></i>
             </button>
             <button class="w3-button w3-round-large" onclick="changeFontSize('decrease')">
-                <i style="font-size:20px;" class="fa fa-search-minus"></i>
+                <i style="font-size:20px;  color: black;" class="fa fa-search-minus"></i>
             </button>
-            <button style= "margin-right:10px" class="w3-button w3-round-large">Visite: <span id="visitsCount">0</span></button>
+            <button style= "color: black;" class="w3-button w3-round-large">Visite: <span id="visitsCount">0</span></button>
         </div>
       <h3><b>Frédéric Chopin e il senso della sofferenza</b></h3>
       <h5>Matteo Picciolini, <span class="w3-opacity">20 Novembre 2023</span></h5>
@@ -276,17 +277,17 @@ and is wrapped around the whole page content, except for the footer in this exam
     <div style=" padding-top: 40px; padding-bottom: 50px;" class="w3-container w3-center">
         <!-- WhatsApp -->
         <a href="https://wa.me/?text=Frédéric%20Chopin%20e%20il%20senso%20della%20sofferenza%20-%20https%3A%2F%2Fmatteopicciolini.github.io%2Fmobius%2FPosts%2Fchopin%2F" target="_blank" class="w3-button w3-round-large w3-whatsapp">
-          <i style="font-size:25px; padding:3px" class="fa fa-whatsapp"></i> 
+          <i style="font-size:25px; padding:3px" class="fa-brands fa-whatsapp"></i> 
         </a>
     
         <!-- Telegram -->
         <a href="https://t.me/share/url?url=https%3A%2F%2Fmatteopicciolini.github.io%2Fmobius%2FPosts%2Fchopin%2F" target="_blank" class="w3-button w3-round-large w3-telegram">
-          <i style="font-size:25px; padding:3px" class="fa fa-telegram"></i> 
+          <i style="font-size:25px; padding:3px" class="fa-brands fa-telegram"></i> 
         </a>
 
         <!-- Facebook -->
         <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmatteopicciolini.github.io%2Fmobius%2FPosts%2Fchopin%2F" target="_blank" class="w3-button w3-round-large w3-facebook">
-            <i style="font-size:25px; padding:3px" class="fa fa-facebook"></i> 
+            <i style="font-size:25px; padding:3px" class="fa-brands fa-facebook"></i> 
         </a>
       </div>
       
@@ -331,10 +332,10 @@ and is wrapped around the whole page content, except for the footer in this exam
         <button class="w3-right w3-button w3-dark-grey w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
     -->
     
-    <a class="w3-button w3-large w3-light-grey" href="https://www.facebook.com/matteo.picciolini.3" title="Facebook"><i class="fa fa-facebook"></i></a>
-    <a class="w3-button w3-large w3-light-grey" href="https://twitter.com/cciopi_py" title="Twitter"><i class="fa fa-twitter"></i></a>
-    <a class="w3-button w3-large w3-light-grey" href="https://www.instagram.com/cciopi.py/" title="Instagram"><i class="fa fa-instagram"></i></a>
-    <a class="w3-button w3-large w3-light-grey" href="https://github.com/matteopicciolini" title="Github"><i class="fa fa-github"></i></a>
+    <a class="w3-button w3-large w3-light-grey" href="https://www.facebook.com/matteo.picciolini.3" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+    <a class="w3-button w3-large w3-light-grey" href="https://twitter.com/cciopi_py" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+    <a class="w3-button w3-large w3-light-grey" href="https://www.instagram.com/cciopi.py/" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a class="w3-button w3-large w3-light-grey" href="https://github.com/matteopicciolini" title="Github"><i class="fa-brands fa-github"></i></a>
    
     <!--<a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>-->
    
