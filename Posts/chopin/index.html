@@ -286,32 +286,27 @@ and is wrapped around the whole page content, except for the footer in this exam
 </div>
 
 <script>
-    function getCurrentDate() {
-            const now = new Date();
-            const year = now.getFullYear();
-            const month = String(now.getMonth() + 1).padStart(2, '0');
-            const day = String(now.getDate()).padStart(2, '0');
-            return `${year}-${month}-${day}`;
+    function getUniqueVisitId() {
+            return new Date().toISOString(); // Puoi usare un metodo diverso per generare un identificatore univoco
         }
 
-        
-        function getVisits() {
-            const lastVisitDate = localStorage.getItem('lastVisitDate');
-            const currentDate = getCurrentDate();
+        var uniqueVisitId = sessionStorage.getItem('uniqueVisitId');
+        var visits = localStorage.getItem('visits');
 
-            if (lastVisitDate !== currentDate) {
-                let visits = localStorage.getItem('visits') || 0;
-                visits++;
-                localStorage.setItem('visits', visits);
-                localStorage.setItem('lastVisitDate', currentDate);
+        // Controlla se l'utente ha già visitato la pagina nella sessione corrente
+        if (!uniqueVisitId) {
+            uniqueVisitId = getUniqueVisitId();
+            sessionStorage.setItem('uniqueVisitId', uniqueVisitId);
+
+            // Incrementa il conteggio solo se è una nuova visita
+            if (!visits) {
+                visits = 0;
             }
 
-
-            const totalVisits = localStorage.getItem('visits') || 0;
-            document.getElementById('visitsCount').textContent = totalVisits;
+            visits++;
+            document.getElementById('visitsCount').textContent = visits;
+            localStorage.setItem('visits', visits);
         }
-
-        getVisits();
 </script>
 <!-- Footer -->
 <footer  style = "padding-top: 50px;" class="w3-container w3-theme-d1 w3-center w3-black">
