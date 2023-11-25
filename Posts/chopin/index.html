@@ -1,346 +1,337 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Mobius</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="og:title" content="Frédéric Chopin e il senso della sofferenza">
-<meta property="og:description" content="In questo post racconto dell'improbabile amicizia nata con Frédéric.">
-<meta property="og:image" content="https://matteopicciolini.github.io/mobius/Images/nocturne.png">
-<link rel="icon" type="image/x-icon" href="https://matteopicciolini.github.io/mobius/Images/favicon.ico">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-<style>
-body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-div {
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-.center-content {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    margin-top: 20px; 
-    margin-bottom: 20px; 
-}
-
-.center-image1 {
-    width: 50%;
-}
-
-.center-image2 {
-    width: 80%;
-}
-
-.center-image3 {
-    width: 60%;
-}
-.center-image4 {
-    width: 60%;
-}
-
-@media (max-width: 550px) {
-    .center-image1 {
-        width: 90%;
-    }
-    .center-image3 {
-        width: 90%;
-    }
-}
-@media (max-width: 992px) {
-    .center-image2 {
-        width: 100%;
-    }
-    .center-image4 {
-        width: 100%;
-    }
-}
-
-.header-band {
-    justify-content: center;
-    margin-top:10px;
-    border-radius: 20px;
-    background-color: #f1f1f1; 
-    padding: 2px; 
-    text-align: center; 
-}
-.dark-theme {
-    background-color: #333;
-    color: #fff;
-}
-</style>
-<script>
-    
-
-
-    function changeFontSize(action) {
-      var textElement = document.getElementById('text');
-      var currentSize = window.getComputedStyle(textElement, null).getPropertyValue('font-size');
-      currentSize = parseFloat(currentSize);
-
-      if (action === 'increase') {
-        currentSize *= 1.1;
-      } else if (action === 'decrease') {
-        currentSize /= 1.1;
-      }
-
-      textElement.style.fontSize = currentSize + 'px';
-    }
-
-    function toggleDarkMode() {
-            var body = document.getElementById('card');
-            body.classList.toggle('dark-theme');
-            body.classList.toggle('w3-white');
-            // Aggiorna l'icona del pulsante in base allo stato corrente
-            var darkModeIcon = document.getElementById('darkModeIcon');
-            darkModeIcon.className = body.classList.contains('dark-theme') ? 'fa fa-sun' : 'fa fa-moon';
-        }
-  </script>
-</head>
-<body class="w3-light-grey">
-
-<!-- w3-content defines a container for fixed size centered content, 
-and is wrapped around the whole page content, except for the footer in this example -->
-<div class="w3-content" style="max-width:1400px">
-
-<!-- Header -->
-<header class="w3-container w3-center w3-padding-32"> 
-  <h1><b>MOBIUS</b></h1>
-  <p style = "margin-top: -15px;"> Matteo Picciolini</p>
-</header>
-
-<!-- Grid -->
-<div class="w3-row" style = "justify-content: center; display:flex">
-
-<!-- Blog entries -->
-<div class="w3-col l8">
-
-
-  <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white" id = "card">
-  <img src="../../Images/nocturne.png" alt="Norway" style="width:100%">
-  
-    <div class="w3-container">
-        <div class="header-band">
-            <button class="w3-button w3-round-large" onclick="toggleDarkMode()">
-                <i style="font-size:20px;  color: black;" class="fas fa-moon" id="darkModeIcon"></i>
-            </button>
-            <button class="w3-button w3-round-large" onclick="changeFontSize('increase')">
-                <i style="font-size:20px;  color: black;" class="fa fa-search-plus"></i>
-            </button>
-            <button class="w3-button w3-round-large" onclick="changeFontSize('decrease')">
-                <i style="font-size:20px;  color: black;" class="fa fa-search-minus"></i>
-            </button>
-            <button style= "color: black;" class="w3-button w3-round-large">Visite: <span id="visitsCount">0</span></button>
-        </div>
-      <h3><b>Frédéric Chopin e il senso della sofferenza</b></h3>
-      <h5>Matteo Picciolini, <span class="w3-opacity">20 Novembre 2023</span></h5>
-      
-      
-    
-    </div>
-    
-    <div class="w3-container" id="text">
-        
-        <p>
-            Entrare nel mondo di Frédéric Chopin significa immergersi in un universo di emozioni particolari, 
-            intrise di melodia, dove ogni nota è una finestra aperta sull'anima tormentata del compositore.
-
-            <br>
-            Nato nel mezzo del panorama romantico del XIX secolo, Chopin ha lasciato un'impronta 
-            indelebile nella storia della musica, trasformando le esperienze personali di una vita in composizioni. 
-            Le sue opere riflettono le sfumature della sua stessa esistenza, catturandone al contempo 
-            le gioie effimere e le profonde tristezze. 
-            Attraverso la tastiera del pianoforte, Chopin dipinge paesaggi sonori intrisi di passione e dell'incessante richiamo alla sua amata Polonia.
-            
-            <br><br>
-            In questo post racconto dell'improbabile amicizia nata con Frédéric. Per farlo, sono costretto a fare una rapida quanto inadeguata biografia della sua vita.
-        </p>
-        <figure class="text-center center-content">
-            <img class="center-image1" src="../../Images/Frederic_Chopin_photo.jpeg" alt="chopin" >
-            <figcaption><i><br>Frédéric Chopin fotografato nel 1849 pochi mesi prima della morte.</i></figcaption>
-        </figure>
-        <p><b>Breve biografia</b></p>
-        <p style="margin-top:-5px">
-            Frédéric nasce nel 1810 in Polonia, un periodo segnato da rivoluzioni politiche e cambiamenti culturali. 
-            La terra natale, con il suo ricco patrimonio artistico e la lotta per l'indipendenza, gli sarà sempre cara, 
-            tanto da dedicarvi varie mazurche, le polonaise, il <i>Krakowiak. Gran Rondò da concerto</i> e la <i>Fantasia su arie polacche</i>.
-            
-            <br><br>
-            La vita di Frédéric prende una svolta significativa quando si trasferisce a Parigi nel 1831. 
-            Qui, nel cuore del romanticismo europeo, entra in contatto con artisti, poeti e musicisti 
-            che condividono la sua passione per l'espressione individuale. 
-            Il Romanticismo, con la sua enfasi sulla libertà creativa e l'indagine delle emozioni umane, offre a Frédéric il 
-            terreno fertile su cui coltivare la sua genialità musicale.
-            
-            <br><br>
-            Dopo un periodo di grande sofferenza e delusione sorto a causa del fallimento della relazione con Maria Wodzińska, che durò tra il 1835 e il 1836, 
-            Frédéric intraprese un turbolento rapporto con la scrittrice francese George Sand nel giugno del 1838.
-            Il breve e infelice soggiorno a Maiorca con George e i figli di lei, avvenuto tra il 1838 e il 1839, 
-            coincide con uno dei periodi più produttivi per Frédéric.
-            La relazione tumultuosa con la scrittrice, rappresenta un capitolo significativo della sua vita, 
-            che lascia un'impronta indelebile non solo nella sua esistenza ma anche nella sua musica.
-            La separazione con George Sand nel 1847 lascia Frédéric emotivamente instabile e sofferente. La sua salute si deteriora rapidamente, e nelle ultime fasi della sua vita compone sempre meno. 
-            <br>Muore di tubercolosi nella notte del 17 ottobre 1849, al numero 12 di Place Vendôme a Parigi all'età di 39 anni.
-            Circondato dei suoi amici, stringe una croce fra le mani. Tredici giorni dopo, numerosi conoscenti, amici e ammiratori gli dicono arrivederci al cimitero Père-Lachaise. 
-            
-            </p>
-
-            <figure class="text-center center-content">
-                <img class="center-image2" src="../../Images/prelude.jpg" alt="prelude">
-                <figcaption><i><br>Inizio dello spartito del Preludio in Mi minore, Op. 9 n. 4</i></figcaption>
-            </figure>
-            <p class="title"><b>Il senso del dolore</b></p>
-            <p style="margin-top:-5px">
-
-            Ho ascoltato e suonato brani composti da Frédéric per molti anni. 
-            Ricordo lucidamente la prima volta che ho messo le mani sulla tastiera per suonare un suo brano, <a href="https://open.spotify.com/track/2UrABkCjNwLnWNd2z7CspQ?si=Epaz2mPHS5ujBkKUX-p29w&utm_source=copy-link"> <i>Preludio in Mi minore, Op. 9 n. 4</i></a>, 
-            un pezzo semplice ma incisivo, che mi raccontava qualcosa in una modalità del tutto nuova. 
-            Non avevo chiaro cosa mi stesse dicendo, era solo un pensiero sfumato - ma c'era - 
-            sentivo che quell'uomo mi stava raccontando qualcosa di sè, senza filtri. <br>
-            Mi ricordo che una volta imparata questa paginetta la suonavo allo sfinimento, per capire, per afferrarne fino in fondo il significato. 
-            Ma ogni volta cambiavano le carte in tavola, ogni volta che la suonavo era sempre diversa, eppure era così semplice, sarei dovuto riuscire a rifarla...
-            <br>Non sono mai riuscito a suonare un pezzo di Frédéric uguale a come l'avevo già suonato precedentemente. 
-            La partitura, le note, erano sempre le stesse, ma la magia era quello che accadeva tra le note dello spartito. 
-            <b>Quegli spazi bianchi che Frédéric mi chiedeva di riempire con la mia vita, con le mie domande. </b>
-            È nata così l'amicizia con Frédéric, quando ho smesso di cercare di replicare quello che c'era scritto sul foglio che avevo davanti e gli ho raccontato la mia storia.
-            
-            
-            <br><br>
-            Subito mi sono scontrato e innamorato dei suoi <i>Notturni</i>. Attraverso questi, in modo più limpido che a parole, Frédéric mi raccontava di me,
-            di quella strana sensazione che mi lascia inerto davanti un cielo stellato o guardando gli occhi della donna che amo. 
-            Così mi ha accompagnato per tanti anni, anche quando ho smesso di suonare. Era un modo ancora diverso, e sicuramente più difficile, di volersi bene.
-            Non potevo suonare, quindi lo ascoltavo, in esecuzioni di altri. 
-            Cercavo di non riascolatare mai la stessa traccia, per evitare di riascoltare un'esecuzione identica alla precedente.
-            </p>
-            <figure class="text-center center-content">
-                <iframe class = "center-image4" style="border-radius:12px" src="https://open.spotify.com/embed/album/2aoSpTAjFaMvaZeruqnCVv?utm_source=generator"  height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-            </figure>
-            <p>
-            <br><br>
-            E quando è arrivato il momento della mia sofferenza Frédéric non mi ha lasciato. Ascolto ogni giorno almeno un suo pezzo, perché
-            mai nella mia vita ho incontrato qualcuno che sappia stare davanti al mio dolore come Frédéric. 
-            È qui, nel grande tormento che provo, che ho intuito la grandezza di quello che ho incontrato a 16 anni ascoltando e suonando la sua musica.
-            <br>
-            Frédéric non mi hai mai dato mezze misure. <b>La vera questione della vita non è trovare qualcosa che plachi la soffenza e metta a tacere la malinconia.</b>
-            Il desiderio di una vita compiuta che anima i suoi brani, è la fonte di inquietudine più grande che lui stesso non ha mai eliminato, 
-            perché eliminandola non sarebbe stato fino in fondo leale con sè stesso. Ogni nota, ogni sospiro, ogni rubato, non è mai solo pura esaltazione del dolore - sarebbe sadismo - 
-            ma slancio per riaffermare il desiderio ultimo di una vita donata. 
-            Questo mi è sempre più evidente ascoltando i suoi <i>Notturni</i>, 
-            in cui credo Frédéric si lasci totalmente trasportare non dal sentimento, 
-            ma dalla sete di felicità che niente e nessuno, nemmeno George, la sua amata Polonia o la musica stessa potevano saziare.
-
-            <br>
-            <b>Frédéric cade mille volte nell'errore di chi si ferma alla malinconia, ma mille volte e uno si rialza, e dona tutto sè stesso alla musica perché è certo che non è condannato a quella sofferenza.</b>
-            Anche sul letto di morte, consolando i suoi amici dice: <i>Amo Dio e amo voi… Morire così va bene. Non piangete, amici cari. Sento che muoio. Pregate con me. Addio, al Cielo. Sono alle fonti della felicità.</i>
-            <br><br>
-        </p>
-            
-        <figure class="text-center center-content">
-            <img class="center-image4" src="../../Images/chopin_tomb.jpeg" alt="chopin_tomb">
-            <figcaption><i><br>La tomba di Frédéric Chopin al Cimitero di Père-Lachaise</i></figcaption>
-        </figure>
-        
-        <p> 
-            <br>
-            Qualche mese fa sono andato a travare un amico che viveva a Parigi, e sono passato a trovare Frédéric al Cimitero di Père-Lachaise. 
-            Si tratta del più grande cimitero della città, talmente grande da potersi tranquillamente perdere. Dopo una faticosa ricerca ho trovato la tomba di Frédéric 
-            affianco a un sentiero che passava nella parte più interna del cimitero. <br>
-            
-            Come ho visto la tomba, sono scoppiato in lacrime. È stato come abbracciare un caro amico che non vedi da tanto. <br>
-            Più commovente ancora, è stato vedere la tomba colma di fiori. 
-            Quando sono andato era Dicembre, faceva freddissimo: per essere così belli e freschi qualcuno li doveva avere messi li da poco. 
-            <br>Sono rimasto lì per una mezzoretta, a pensare a quanto fosse assurdo questo legame con una persona che fondamentalmente è morta più di 150 anni fa. 
-            Pensavo a quanto fosse assurdo che al posto che visitare Parigi, mi trovassi lì, in un cimitero, a pregare per uno che non ho mai visto in faccia.
-            <br>Mentre dicevo qualche preghiera è passato uno dei custodi, che, sinceramente interessato, ha chiesto di me, chi fossi, cosa ci facessi lì. Mi ha raccontato di come quella tomba fosse una delle 
-            più visitate del cimitero, e che spesso i visitatori portavano dei fiori per lui. 
-            Nemmeno lui se lo spiegava, e rimaneva colpito ogni settimana di vedere volti nuovi davanti alla tomba di Frédéric.
-        <br><br>
-            Ringrazio Frédéric di tante cose, ma soprattutto perché mi insegna con la sua musica, a distanza di secoli dal suo ultimo respiro su questa Terra, ad avere la forza di affrontare la mia sofferenza, di cercarne il senso fino alla fine, 
-            senza esserne condannati e con uno slancio rinnovato ogni giorno.
-            <br>
-            Grazie Frédéric, riposa in pace.
-        </p>
-        
-        <div class="w3-row">
-        
-        <!--
-            <div class="w3-col m4 w3-hide-small">
-          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
-        </div>
-        -->
-      </div>
-    </div>
-    <div style=" padding-top: 40px; padding-bottom: 50px;" class="w3-container w3-center">
-        <!-- WhatsApp -->
-        <a href="https://wa.me/?text=Frédéric%20Chopin%20e%20il%20senso%20della%20sofferenza%20-%20https%3A%2F%2Fmatteopicciolini.github.io%2Fmobius%2FPosts%2Fchopin%2F" target="_blank" class="w3-button w3-round-large w3-whatsapp">
-          <i style="font-size:25px; padding:3px" class="fa-brands fa-whatsapp"></i> 
-        </a>
-    
-        <!-- Telegram -->
-        <a href="https://t.me/share/url?url=https%3A%2F%2Fmatteopicciolini.github.io%2Fmobius%2FPosts%2Fchopin%2F" target="_blank" class="w3-button w3-round-large w3-telegram">
-          <i style="font-size:25px; padding:3px" class="fa-brands fa-telegram"></i> 
-        </a>
-
-        <!-- Facebook -->
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmatteopicciolini.github.io%2Fmobius%2FPosts%2Fchopin%2F" target="_blank" class="w3-button w3-round-large w3-facebook">
-            <i style="font-size:25px; padding:3px" class="fa-brands fa-facebook"></i> 
-        </a>
-      </div>
-      
-  </div>
-  
-<!-- END BLOG ENTRIES -->
-</div>
-
-<!-- END GRID -->
-</div><br>
-
-<!-- END w3-content -->
-</div>
-
-<script>
-    function getUniqueVisitId() {
-            return new Date().toISOString(); // Puoi usare un metodo diverso per generare un identificatore univoco
-        }
-
-        var uniqueVisitId = sessionStorage.getItem('uniqueVisitId');
-        var visits = localStorage.getItem('visits');
-
-        // Controlla se l'utente ha già visitato la pagina nella sessione corrente
-        if (!uniqueVisitId) {
-            uniqueVisitId = getUniqueVisitId();
-            sessionStorage.setItem('uniqueVisitId', uniqueVisitId);
-
-            // Incrementa il conteggio solo se è una nuova visita
-            if (!visits) {
-                visits = 0;
+    <head>
+        <title>Mobius</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Frédéric Chopin e il senso della sofferenza">
+        <meta property="og:description" content="In questo post racconto dell'improbabile amicizia nata con Frédéric.">
+        <meta property="og:image" content="https://matteopicciolini.github.io/mobius/Images/nocturne.png">
+        <link rel="icon" type="image/x-icon" href="https://matteopicciolini.github.io/mobius/Images/favicon.ico">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <style>
+            body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+            div {
+                text-align: justify;
+                text-justify: inter-word;
             }
 
-            visits++;
-            document.getElementById('visitsCount').textContent = visits;
-            localStorage.setItem('visits', visits);
-        }
-</script>
-<!-- Footer -->
-<footer  style = "padding-top: 50px;" class="w3-container w3-theme-d1 w3-center w3-black">
-    <!--
-        <button class="w3-right w3-button w3-dark-grey w3-padding-large w3-margin-bottom">Next »</button>
-        <button class="w3-right w3-button w3-dark-grey w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
-    -->
-    
-    <a class="w3-button w3-large w3-light-grey" href="https://www.facebook.com/matteo.picciolini.3" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
-    <a class="w3-button w3-large w3-light-grey" href="https://twitter.com/cciopi_py" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
-    <a class="w3-button w3-large w3-light-grey" href="https://www.instagram.com/cciopi.py/" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-    <a class="w3-button w3-large w3-light-grey" href="https://github.com/matteopicciolini" title="Github"><i class="fa-brands fa-github"></i></a>
-   
-    <!--<a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>-->
-   
-    <p style = "font-size: 12px;">Powered by Matteo Picciolini </p>
-    <br>
-  </footer>
-</body>
+            .center-content {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                margin-top: 20px; 
+                margin-bottom: 20px; 
+            }
+
+            .center-image1 {
+                width: 50%;
+            }
+
+            .center-image2 {
+                width: 80%;
+            }
+
+            .center-image3 {
+                width: 60%;
+            }
+            .center-image4 {
+                width: 60%;
+            }
+
+            @media (max-width: 550px) {
+                .center-image1 {
+                    width: 90%;
+                }
+                .center-image3 {
+                    width: 90%;
+                }
+            }
+            @media (max-width: 992px) {
+                .center-image2 {
+                    width: 100%;
+                }
+                .center-image4 {
+                    width: 100%;
+                }
+            }
+
+            .header-band {
+                justify-content: center;
+                margin-top:10px;
+                border-radius: 20px;
+                background-color: #f1f1f1; 
+                padding: 2px; 
+                text-align: center; 
+            }
+            .dark-theme {
+                background-color: #333;
+                color: #fff;
+            }
+        </style>
+        <script>
+            function changeFontSize(action) {
+            var textElement = document.getElementById('text');
+            var currentSize = window.getComputedStyle(textElement, null).getPropertyValue('font-size');
+            currentSize = parseFloat(currentSize);
+
+            if (action === 'increase') {
+                currentSize *= 1.1;
+            } else if (action === 'decrease') {
+                currentSize /= 1.1;
+            }
+
+            textElement.style.fontSize = currentSize + 'px';
+            }
+
+            function toggleDarkMode() {
+                    var body = document.getElementById('card');
+                    body.classList.toggle('dark-theme');
+                    body.classList.toggle('w3-white');
+                    // Aggiorna l'icona del pulsante in base allo stato corrente
+                    var darkModeIcon = document.getElementById('darkModeIcon');
+                    darkModeIcon.className = body.classList.contains('dark-theme') ? 'fa fa-sun' : 'fa fa-moon';
+                }
+        </script>
+    </head>
+    <body class="w3-light-grey">
+
+        <div class="w3-content" style="max-width:1400px">
+
+            <!-- Header -->
+            <header class="w3-container w3-center w3-padding-32"> 
+                <h1><b>MOBIUS</b></h1>
+                <p style = "margin-top: -15px;"> Matteo Picciolini</p>
+            </header>
+
+            <!-- Grid -->
+            <div class="w3-row" style = "justify-content: center; display:flex">
+
+                <!-- Blog entries -->
+                <div class="w3-col l8">
+
+
+                    <!-- Blog entry -->
+                    <div class="w3-card-4 w3-margin w3-white" id = "card">
+                        <img src="../../Images/nocturne.png" alt="Norway" style="width:100%">
+                        <div class="w3-container">
+                            <div class="header-band">
+                                <button class="w3-button w3-round-large" onclick="toggleDarkMode()">
+                                    <i style="font-size:20px;  color: black;" class="fas fa-moon" id="darkModeIcon"></i>
+                                </button>
+                                <button class="w3-button w3-round-large" onclick="changeFontSize('increase')">
+                                    <i style="font-size:20px;  color: black;" class="fa fa-search-plus"></i>
+                                </button>
+                                <button class="w3-button w3-round-large" onclick="changeFontSize('decrease')">
+                                    <i style="font-size:20px;  color: black;" class="fa fa-search-minus"></i>
+                                </button>
+                                <button style= "color: black;" class="w3-button w3-round-large">Visite: <span id="visitsCount">0</span></button>
+                            </div>
+                            <h3><b>Frédéric Chopin e il senso della sofferenza</b></h3>
+                            <h5>Matteo Picciolini, <span class="w3-opacity">20 Novembre 2023</span></h5>
+                        </div>
+                
+                        <div class="w3-container" id="text">
+                    
+                            <p>
+                                Entrare nel mondo di Frédéric Chopin significa immergersi in un universo di emozioni particolari, 
+                                intrise di melodia, dove ogni nota è una finestra aperta sull'anima tormentata del compositore.
+
+                                <br>
+                                Nato nel mezzo del panorama romantico del XIX secolo, Chopin ha lasciato un'impronta 
+                                indelebile nella storia della musica, trasformando le esperienze personali di una vita in composizioni. 
+                                Le sue opere riflettono le sfumature della sua stessa esistenza, catturandone al contempo 
+                                le gioie effimere e le profonde tristezze. 
+                                Attraverso la tastiera del pianoforte, Chopin dipinge paesaggi sonori intrisi di passione e dell'incessante richiamo alla sua amata Polonia.
+                                
+                                <br><br>
+                                In questo post racconto dell'improbabile amicizia nata con Frédéric. Per farlo, sono costretto a fare una rapida quanto inadeguata biografia della sua vita.
+                            </p>
+
+                            <figure class="text-center center-content">
+                                <img class="center-image1" src="../../Images/Frederic_Chopin_photo.jpeg" alt="chopin" >
+                                <figcaption><i><br>Frédéric Chopin fotografato nel 1849 pochi mesi prima della morte.</i></figcaption>
+                            </figure>
+
+                            <p><b>Breve biografia</b></p>
+
+                            <p style="margin-top:-5px">
+                                Frédéric nasce nel 1810 in Polonia, un periodo segnato da rivoluzioni politiche e cambiamenti culturali. 
+                                La terra natale, con il suo ricco patrimonio artistico e la lotta per l'indipendenza, gli sarà sempre cara, 
+                                tanto da dedicarvi varie mazurche, le polonaise, il <i>Krakowiak. Gran Rondò da concerto</i> e la <i>Fantasia su arie polacche</i>.
+                                
+                                <br><br>
+                                La vita di Frédéric prende una svolta significativa quando si trasferisce a Parigi nel 1831. 
+                                Qui, nel cuore del romanticismo europeo, entra in contatto con artisti, poeti e musicisti 
+                                che condividono la sua passione per l'espressione individuale. 
+                                Il Romanticismo, con la sua enfasi sulla libertà creativa e l'indagine delle emozioni umane, offre a Frédéric il 
+                                terreno fertile su cui coltivare la sua genialità musicale.
+                                
+                                <br><br>
+                                Dopo un periodo di grande sofferenza e delusione sorto a causa del fallimento della relazione con Maria Wodzińska, che durò tra il 1835 e il 1836, 
+                                Frédéric intraprese un turbolento rapporto con la scrittrice francese George Sand nel giugno del 1838.
+                                Il breve e infelice soggiorno a Maiorca con George e i figli di lei, avvenuto tra il 1838 e il 1839, 
+                                coincide con uno dei periodi più produttivi per Frédéric.
+                                La relazione tumultuosa con la scrittrice, rappresenta un capitolo significativo della sua vita, 
+                                che lascia un'impronta indelebile non solo nella sua esistenza ma anche nella sua musica.
+                                La separazione con George Sand nel 1847 lascia Frédéric emotivamente instabile e sofferente. La sua salute si deteriora rapidamente, e nelle ultime fasi della sua vita compone sempre meno. 
+                                <br>Muore di tubercolosi nella notte del 17 ottobre 1849, al numero 12 di Place Vendôme a Parigi all'età di 39 anni.
+                                Circondato dei suoi amici, stringe una croce fra le mani. Tredici giorni dopo, numerosi conoscenti, amici e ammiratori gli dicono arrivederci al cimitero Père-Lachaise. 
+                                
+                            </p>
+
+                            <figure class="text-center center-content">
+                                <img class="center-image2" src="../../Images/prelude.jpg" alt="prelude">
+                                <figcaption><i><br>Inizio dello spartito del Preludio in Mi minore, Op. 9 n. 4</i></figcaption>
+                            </figure>
+                            <p class="title"><b>Il senso del dolore</b></p>
+                            <p style="margin-top:-5px">
+                                Ho ascoltato e suonato brani composti da Frédéric per molti anni. 
+                                Ricordo lucidamente la prima volta che ho messo le mani sulla tastiera per suonare un suo brano, <a href="https://open.spotify.com/track/2UrABkCjNwLnWNd2z7CspQ?si=Epaz2mPHS5ujBkKUX-p29w&utm_source=copy-link"> <i>Preludio in Mi minore, Op. 9 n. 4</i></a>, 
+                                un pezzo semplice ma incisivo, che mi raccontava qualcosa in una modalità del tutto nuova. 
+                                Non avevo chiaro cosa mi stesse dicendo, era solo un pensiero sfumato - ma c'era - 
+                                sentivo che quell'uomo mi stava raccontando qualcosa di sè, senza filtri. <br>
+                                Mi ricordo che una volta imparata questa paginetta la suonavo allo sfinimento, per capire, per afferrarne fino in fondo il significato. 
+                                Ma ogni volta cambiavano le carte in tavola, ogni volta che la suonavo era sempre diversa, eppure era così semplice, sarei dovuto riuscire a rifarla...
+                                <br>Non sono mai riuscito a suonare un pezzo di Frédéric uguale a come l'avevo già suonato precedentemente. 
+                                La partitura, le note, erano sempre le stesse, ma la magia era quello che accadeva tra le note dello spartito. 
+                                <b>Quegli spazi bianchi che Frédéric mi chiedeva di riempire con la mia vita, con le mie domande. </b>
+                                È nata così l'amicizia con Frédéric, quando ho smesso di cercare di replicare quello che c'era scritto sul foglio che avevo davanti e gli ho raccontato la mia storia.
+                                
+                                
+                                <br><br>
+                                Subito mi sono scontrato e innamorato dei suoi <i>Notturni</i>. Attraverso questi, in modo più limpido che a parole, Frédéric mi raccontava di me,
+                                di quella strana sensazione che mi lascia inerto davanti un cielo stellato o guardando gli occhi della donna che amo. 
+                                Così mi ha accompagnato per tanti anni, anche quando ho smesso di suonare. Era un modo ancora diverso, e sicuramente più difficile, di volersi bene.
+                                Non potevo suonare, quindi lo ascoltavo, in esecuzioni di altri. 
+                                Cercavo di non riascolatare mai la stessa traccia, per evitare di riascoltare un'esecuzione identica alla precedente.
+                            </p>
+                            <figure class="text-center center-content">
+                                <iframe class = "center-image4" style="border-radius:12px" src="https://open.spotify.com/embed/album/2aoSpTAjFaMvaZeruqnCVv?utm_source=generator"  height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                            </figure>
+                            <p>
+                                <br><br>
+                                E quando è arrivato il momento della mia sofferenza Frédéric non mi ha lasciato. Ascolto ogni giorno almeno un suo pezzo, perché
+                                mai nella mia vita ho incontrato qualcuno che sappia stare davanti al mio dolore come Frédéric. 
+                                È qui, nel grande tormento che provo, che ho intuito la grandezza di quello che ho incontrato a 16 anni ascoltando e suonando la sua musica.
+                                <br>
+                                Frédéric non mi hai mai dato mezze misure. <b>La vera questione della vita non è trovare qualcosa che plachi la soffenza e metta a tacere la malinconia.</b>
+                                Il desiderio di una vita compiuta che anima i suoi brani, è la fonte di inquietudine più grande che lui stesso non ha mai eliminato, 
+                                perché eliminandola non sarebbe stato fino in fondo leale con sè stesso. Ogni nota, ogni sospiro, ogni rubato, non è mai solo pura esaltazione del dolore - sarebbe sadismo - 
+                                ma slancio per riaffermare il desiderio ultimo di una vita donata. 
+                                Questo mi è sempre più evidente ascoltando i suoi <i>Notturni</i>, 
+                                in cui credo Frédéric si lasci totalmente trasportare non dal sentimento, 
+                                ma dalla sete di felicità che niente e nessuno, nemmeno George, la sua amata Polonia o la musica stessa potevano saziare.
+
+                                <br>
+                                <b>Frédéric cade mille volte nell'errore di chi si ferma alla malinconia, ma mille volte e uno si rialza, e dona tutto sè stesso alla musica perché è certo che non è condannato a quella sofferenza.</b>
+                                Anche sul letto di morte, consolando i suoi amici dice: <i>Amo Dio e amo voi… Morire così va bene. Non piangete, amici cari. Sento che muoio. Pregate con me. Addio, al Cielo. Sono alle fonti della felicità.</i>
+                                <br><br>
+                            </p>
+                        
+                            <figure class="text-center center-content">
+                                <img class="center-image4" src="../../Images/chopin_tomb.jpeg" alt="chopin_tomb">
+                                <figcaption><i><br>La tomba di Frédéric Chopin al Cimitero di Père-Lachaise</i></figcaption>
+                            </figure>
+                    
+                            <p> 
+                                <br>
+                                Qualche mese fa sono andato a travare un amico che viveva a Parigi, e sono passato a trovare Frédéric al Cimitero di Père-Lachaise. 
+                                Si tratta del più grande cimitero della città, talmente grande da potersi tranquillamente perdere. Dopo una faticosa ricerca ho trovato la tomba di Frédéric 
+                                affianco a un sentiero che passava nella parte più interna del cimitero. <br>
+                                
+                                Come ho visto la tomba, sono scoppiato in lacrime. È stato come abbracciare un caro amico che non vedi da tanto. <br>
+                                Più commovente ancora, è stato vedere la tomba colma di fiori. 
+                                Quando sono andato era Dicembre, faceva freddissimo: per essere così belli e freschi qualcuno li doveva avere messi li da poco. 
+                                <br>Sono rimasto lì per una mezzoretta, a pensare a quanto fosse assurdo questo legame con una persona che fondamentalmente è morta più di 150 anni fa. 
+                                Pensavo a quanto fosse assurdo che al posto che visitare Parigi, mi trovassi lì, in un cimitero, a pregare per uno che non ho mai visto in faccia.
+                                <br>Mentre dicevo qualche preghiera è passato uno dei custodi, che, sinceramente interessato, ha chiesto di me, chi fossi, cosa ci facessi lì. Mi ha raccontato di come quella tomba fosse una delle 
+                                più visitate del cimitero, e che spesso i visitatori portavano dei fiori per lui. 
+                                Nemmeno lui se lo spiegava, e rimaneva colpito ogni settimana di vedere volti nuovi davanti alla tomba di Frédéric.
+                                <br><br>
+                                Ringrazio Frédéric di tante cose, ma soprattutto perché mi insegna con la sua musica, a distanza di secoli dal suo ultimo respiro su questa Terra, ad avere la forza di affrontare la mia sofferenza, di cercarne il senso fino alla fine, 
+                                senza esserne condannati e con uno slancio rinnovato ogni giorno.
+                                <br><br>
+                                Grazie Frédéric, riposa in pace.
+                            </p>
+                    
+                            <div class="w3-row">
+                                <!--
+                                    <div class="w3-col m4 w3-hide-small">
+                                <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
+                                </div>
+                                -->
+                            </div>
+                        </div>
+
+                        <div style=" padding-top: 40px; padding-bottom: 50px;" class="w3-container w3-center">
+                            <!-- WhatsApp -->
+                            <a href="https://wa.me/?text=Frédéric%20Chopin%20e%20il%20senso%20della%20sofferenza%20-%20https%3A%2F%2Fmatteopicciolini.github.io%2Fmobius%2FPosts%2Fchopin%2F" target="_blank" class="w3-button w3-round-large w3-whatsapp">
+                            <i style="font-size:25px; padding:3px" class="fa-brands fa-whatsapp"></i> 
+                            </a>
+                        
+                            <!-- Telegram -->
+                            <a href="https://t.me/share/url?url=https%3A%2F%2Fmatteopicciolini.github.io%2Fmobius%2FPosts%2Fchopin%2F" target="_blank" class="w3-button w3-round-large w3-telegram">
+                            <i style="font-size:25px; padding:3px" class="fa-brands fa-telegram"></i> 
+                            </a>
+
+                            <!-- Facebook -->
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmatteopicciolini.github.io%2Fmobius%2FPosts%2Fchopin%2F" target="_blank" class="w3-button w3-round-large w3-facebook">
+                                <i style="font-size:25px; padding:3px" class="fa-brands fa-facebook"></i> 
+                            </a>
+                        </div>
+                
+                    </div>
+                    <!-- END BLOG ENTRIES -->
+                </div>
+            </div>
+            <br>
+            <!-- END w3-content -->
+        </div>
+
+        <script>
+            function getUniqueVisitId() {
+                return new Date().toISOString(); // Puoi usare un metodo diverso per generare un identificatore univoco
+            }
+
+            var uniqueVisitId = sessionStorage.getItem('uniqueVisitId');
+            var visits = localStorage.getItem('visits');
+
+            // Controlla se l'utente ha già visitato la pagina nella sessione corrente
+            if (!uniqueVisitId) {
+                uniqueVisitId = getUniqueVisitId();
+                sessionStorage.setItem('uniqueVisitId', uniqueVisitId);
+
+                // Incrementa il conteggio solo se è una nuova visita
+                if (!visits) {
+                    visits = 0;
+                }
+
+                visits++;
+                document.getElementById('visitsCount').textContent = visits;
+                localStorage.setItem('visits', visits);
+            }
+        </script>
+
+        <!-- Footer -->
+        <footer  style = "padding-top: 50px;" class="w3-container w3-theme-d1 w3-center w3-black">
+            <!--
+                <button class="w3-right w3-button w3-dark-grey w3-padding-large w3-margin-bottom">Next »</button>
+                <button class="w3-right w3-button w3-dark-grey w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+            -->
+            
+            <a class="w3-button w3-large w3-light-grey" href="https://www.facebook.com/matteo.picciolini.3" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a class="w3-button w3-large w3-light-grey" href="https://twitter.com/cciopi_py" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a class="w3-button w3-large w3-light-grey" href="https://www.instagram.com/cciopi.py/" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a class="w3-button w3-large w3-light-grey" href="https://github.com/matteopicciolini" title="Github"><i class="fa-brands fa-github"></i></a>
+
+            <!--<a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>-->
+
+            <p style = "font-size: 12px;">Powered by Matteo Picciolini </p>
+            <br>
+        </footer>
+    </body>
 </html>
