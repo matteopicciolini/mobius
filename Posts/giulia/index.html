@@ -139,7 +139,7 @@
                                 <button class="w3-button w3-round-large" onclick="changeFontSize('decrease')">
                                     <i style="font-size:20px;  color: black;" class="fa fa-search-minus"></i>
                                 </button>
-                                <button style= "color: black;" class="w3-button w3-round-large">Visite: <span id="visitsCount">0</span></button>
+                                <button style= "color: black;" class="w3-button w3-round-large">Visite: <span id="visit-counter">0</span></button>
                             </div>
                             <h3><b>Giulia e Filippo: tra promessa e libertà</b></h3>
                             <h5>Matteo Picciolini, <span class="w3-opacity">25 Novembre 2023</span></h5>
@@ -254,27 +254,35 @@
         </div>
 
         <script>
-            function getUniqueVisitId() {
-                return new Date().toISOString(); // Puoi usare un metodo diverso per generare un identificatore univoco
+            // Funzione per ottenere o inizializzare il conteggio delle visite per una pagina specifica
+            function getVisitCount() {
+            // Leggi il valore da localStorage utilizzando l'URL come chiave
+            const pageUrl = window.location.href;
+            const visitCount = parseInt(localStorage.getItem(pageUrl)) || 0;
+            return visitCount;
             }
 
-            var uniqueVisitId = sessionStorage.getItem('uniqueVisitId');
-            var visits = localStorage.getItem('visits');
-
-            // Controlla se l'utente ha già visitato la pagina nella sessione corrente
-            if (!uniqueVisitId) {
-                uniqueVisitId = getUniqueVisitId();
-                sessionStorage.setItem('uniqueVisitId', uniqueVisitId);
-
-                // Incrementa il conteggio solo se è una nuova visita
-                if (!visits) {
-                    visits = 0;
-                }
-
-                visits++;
-                document.getElementById('visitsCount').textContent = visits;
-                localStorage.setItem('visits', visits);
+            // Funzione per incrementare il conteggio delle visite per una pagina specifica
+            function incrementVisitCount() {
+            const pageUrl = window.location.href;
+            const visitCount = getVisitCount() + 1;
+            // Salva il nuovo valore in localStorage utilizzando l'URL come chiave
+            localStorage.setItem(pageUrl, visitCount);
+            return visitCount;
             }
+
+            // Funzione per aggiornare il conteggio delle visite nel DOM
+            function updateVisitCounter() {
+            const visitCount = getVisitCount();
+            const counterElement = document.getElementById("visit-counter");
+            counterElement.textContent = `${visitCount}`;
+            }
+
+            // Incrementa il conteggio delle visite al caricamento della pagina
+            window.onload = function () {
+            const visitCount = incrementVisitCount();
+            updateVisitCounter();
+            };
         </script>
 
         <!-- Footer -->
