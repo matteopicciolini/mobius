@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GV7KHEM1XB"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-GV7KHEM1XB');
+        </script>
+
+
+        <title>Vita e vite</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Vita e vite">
+        <meta property="og:description" content="In questo post racconto dell'improbabile amicizia nata con Frédéric.">
+        <meta property="og:image" content="https://matteopicciolini.github.io/mobius/Images/attesa.jpg">
+        <link rel="icon" type="image/x-icon" href="https://matteopicciolini.github.io/mobius/Images/favicon.ico">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <style>
+            body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+            div {
+                text-align: justify;
+                text-justify: inter-word;
+            }
+
+            .center-content {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                margin-top: 20px; 
+                margin-bottom: 20px; 
+            }
+
+            .center-image1 {
+                width: 50%;
+            }
+
+            .center-image2 {
+                width: 80%;
+            }
+
+            .center-image3 {
+                width: 60%;
+            }
+            .center-image4 {
+                width: 60%;
+            }
+
+            @media (max-width: 550px) {
+                .center-image1 {
+                    width: 90%;
+                }
+                .center-image3 {
+                    width: 90%;
+                }
+            }
+            @media (max-width: 992px) {
+                .center-image2 {
+                    width: 100%;
+                }
+                .center-image4 {
+                    width: 100%;
+                }
+            }
+
+            .header-band {
+                justify-content: center;
+                margin-top:10px;
+                border-radius: 20px;
+                background-color: #f1f1f1; 
+                padding: 2px; 
+                text-align: center; 
+            }
+            .dark-theme {
+                background-color: #333;
+                color: #fff;
+            }
+        </style>
+        <script>
+            function changeFontSize(action) {
+            var textElement = document.getElementById('text');
+            var currentSize = window.getComputedStyle(textElement, null).getPropertyValue('font-size');
+            currentSize = parseFloat(currentSize);
+
+            if (action === 'increase') {
+                currentSize *= 1.1;
+            } else if (action === 'decrease') {
+                currentSize /= 1.1;
+            }
+
+            textElement.style.fontSize = currentSize + 'px';
+            }
+
+            function toggleDarkMode() {
+                    var body = document.getElementById('card');
+                    body.classList.toggle('dark-theme');
+                    body.classList.toggle('w3-white');
+                    // Aggiorna l'icona del pulsante in base allo stato corrente
+                    var darkModeIcon = document.getElementById('darkModeIcon');
+                    darkModeIcon.className = body.classList.contains('dark-theme') ? 'fa fa-sun' : 'fa fa-moon';
+                }
+        </script>
+    </head>
+    <body class="w3-light-grey">
+
+        <div class="w3-content" style="max-width:1400px">
+
+            <!-- Header -->
+            <header class="w3-container w3-center w3-padding-32"> 
+                <h1><b>MÖBIUS</b></h1>
+                <p style = "margin-top: -15px;"> Matteo Picciolini</p>
+            </header>
+
+            <!-- Grid -->
+            <div class="w3-row" style = "justify-content: center; display:flex">
+
+                <!-- Blog entries -->
+                <div class="w3-col l8">
+
+
+                    <!-- Blog entry -->
+                    <div class="w3-card-4 w3-margin w3-white" id = "card">
+                        <img src="../../Images/attesa.jpg" alt="Norway" style="width:100%">
+                        <div class="w3-container">
+                            <div class="header-band">
+                                <button class="w3-button w3-round-large" onclick="window.location.href = '../../';">
+                                    <i style="font-size:20px;  color: black;" class="fas fa-home"></i>
+                                </button>
+                                <button class="w3-button w3-round-large" onclick="toggleDarkMode()">
+                                    <i style="font-size:20px;  color: black;" class="fas fa-moon" id="darkModeIcon"></i>
+                                </button>
+                                <button class="w3-button w3-round-large" onclick="changeFontSize('increase')">
+                                    <i style="font-size:20px;  color: black;" class="fa fa-search-plus"></i>
+                                </button>
+                                <button class="w3-button w3-round-large" onclick="changeFontSize('decrease')">
+                                    <i style="font-size:20px;  color: black;" class="fa fa-search-minus"></i>
+                            </div>
+                            <h3><b>Vita e vite</b></h3>
+                            <h5>Matteo Picciolini, <span class="w3-opacity">09 agosto 2026</span></h5>
+                        </div>
+                
+                        <div class="w3-container" id="text">
+                    
+                            <p>
+                                Tre anni fa sono andato a Roma con un gruppo di 
+                                amici fisici. Sulla via del ritorno alla volta 
+                                di Milano, alcuni di loro hanno fatto richiesta 
+                                di fermarsi in un convento di suore clausura 
+                                sperduto nell'entroterra laziale, a Vitorchiano, 
+                                in provincia di Viterbo. 
+                                Qualche mese prima, infatti, una ragazza che 
+                                aveva studiato Fisica a Milano, 
+                                un paio d'anni più grande di me, 
+                                aveva iniziato lì il percorso di noviziato. 
+                                Alcuni di noi più legati a lei, 
+                                proposero allora di fermarci a salutarla.
+
+                                <br>
+                                Di quello che successe nei minuti successivi ricordo poco: 
+                                il saluto alla suora che ci accolse, qualche parola scambiata 
+                                all'ingresso, il passaggio attraverso il monastero. 
+                                Ricordo invece molto bene il momento in cui entrammo nel 
+                                parlatorio.
+                                Eravamo arrivati leggermente in ritardo rispetto 
+                                all'orario concordato. Dall'altra parte della stanza, 
+                                dietro il bancone che la percorreva per tutta 
+                                la sua lunghezza e segnava il confine della clausura, 
+                                c'era C. che ci aspettava.
+                                
+                                All'ingresso la vidi intenta a spolverare le sedie su cui 
+                                ci saremmo seduti da lì a breve. Non c'era, sia chiaro, 
+                                alcun bisogno di farlo. Le sedie non erano impolverate, 
+                                né sembravano averne particolare bisogno. 
+                                Semplicemente, C. voleva che il nostro culo avesse
+                                la miglior seduta possibile tra quelle che il monastero poteva offrirci.
+                                Ricordo di aver pensato: <i>Ma chi, sapendo che un amico passerà 
+                                a trovarti per pochi minuti, 
+                                mentre è di ritorno da un viaggio di 800 km, si mette a 
+                                spolverare la sedia su cui poggerà il culo?</i>
+                                <br>
+                                L'attesa, per me, è tutt'altro: una palla al piede del fare frenetico delle giornate.
+                                Quante volte mi è capitato di aspettare un amico, magari in ritardo, 
+                                e giudicare quel tempo uno spreco, 
+                                finendo magari per alimentare questo 
+                                giudizio scrollando sui social proprio 
+                                per <i>passare il tempo</i>.
+                                Per C., invece, <b>quel tempo aveva la stessa dignità di quello passato nella preghiera o nei campi. E non è stato nemmeno necessario dirlo: è bastato quel gesto.</b>
+                                <br><br>
+                                
+                            </p>
+
+                            <figure class="text-center center-content">
+                                <img class="center-image2" src="../../Images/filari.jpg" alt="chopin" >
+                                <figcaption><i><br>Filari di vite durante la vendemmia in provincia di Verona.</i></figcaption>
+                            </figure>
+
+                            <p>Non penso di essere l'unico a cui un comportamento come 
+                                quello di C. sia parso <i>diverso</i>. Ma non penso neppure 
+                                che sia necessario spingersi fino a Vitorchiano 
+                                per imbattersi in qualcosa di simile.
+                                <br>
+                                Proprio oggi, aiutavo mia nonna, che era malata da qualche giorno. 
+                                Dalla sua camera da letto mi aveva chiesto se potevo 
+                                portarle una cosa che avevo comprato poco prima. 
+                                Ci ho messo qualche minuto prima di portargliela, 
+                                diciamo tra i 5 e i 10 minuti. 
+                                Una volta pronto, mi sono presentato alla sua porta, 
+                                e già mi immaginavo la scena di lei addormentata 
+                                per la stanchezza data da questi giorni di malattia, 
+                                o intenta ad ascoltare con attenzione la sua radio sintonizzata
+                                 sulle frequenze di radio Maria. 
+                                Svoltando l'uscio, invece, vedo lei, piccola come una bambina, 
+                                seduta sul letto che aspettava a testa alta nient'altro che me. 
+                                Non scrollava, non dormiva, non aspettava come io 
+                                sono solito aspettare. 
+                                Quando mi ha visto arrivare mi ha accolto con un sorriso, 
+                                e con la mano destra dolcemente ha accarezzato la porzione di 
+                                lenzuolo accanto a lei per farmi segno di sedermi e 
+                                condividere con lei quel momento.
+                            </p> <p>
+                            Cos'hanno in comune questi due episodi? 
+                            Entrambi vivono fuori dalle dinamiche del mondo. 
+                            In un tempo dove la performance è lo strumento
+                            di misura delle capacità, in che altro modo potrei giudicare
+                            l'attesa di un ritardatario se non come una perdita di tempo?
+                            Eppure, per C. quei minuti prima del nostro arrivo non erano tempo da ammazzare. Per mia nonna, quei pochi minuti in cui mi aspettava non erano un vuoto da riempire. Erano semplicemente tempo.
+                            Io, invece, ho continuamente momenti di attesa che cerco di riempire schizofrenicamente. <b>Piuttosto che affrontare il vuoto di un'attesa che non è in mio potere, anestetizzo quel disagio — perché di disagio si tratta, quando bisogna fare i conti con se stessi — attraverso l'appagamento istantaneo di qualche video fugace.
+                            A cosa educa questo? </b>
+                            Perché, come dice un mio amico, <i>Tutto educa</i>. 
+                            </p>
+                            
+                            <p style="margin-top:-5px">
+                                La chiacchierata con C. proseguì ancora per un po'. 
+                                A un certo punto cominciò a raccontarci del suo lavoro nei campi.
+                                Da qualche tempo stava piantando la vite, a mano. 
+                                Lunghi filari che per i successivi sette anni 
+                                avrebbero avuto bisogno di essere innaffiati, curati, 
+                                accuditi, prima di poter dare il loro primo frutto. 
+                                E anche allora non sarebbe finita: l'uva avrebbe 
+                                dovuto essere raccolta e trasformata in vino; il
+                                che avrebbe avuto, naturalmente, i suoi tempi.
+
+                                C. raccontava tutto questo con una naturalezza disarmante, 
+                                come se sette anni fossero un tempo qualsiasi, 
+                                quasi non ci fosse nulla di strano nella decisione di attendere tutto quel tempo.
+                                <br>
+                                &emsp;- <i>Questa è scema</i>, ho pensato.
+                                <br>
+                                Sia chiaro: quello che sto raccontando non è semplicemente la storia di un ragazzo cresciuto in città che scopre la vita di campagna. Certo, sarebbe scorretto dire che questo non c'entri. 
+                                Ma il punto è più profondo, perché, oggi, questa è una questione di scelta
+
+                                Forse un tempo non c'era molto da scegliere: la vite si piantava, si curava, si aspettava, per necessità. La vita aveva i suoi tempi e bisognava starci dentro.
+
+                                Oggi, invece, abbiamo a disposizione un'infinità di modi per fare le cose più velocemente, per ottenere risultati prima, per riempire ogni attesa.
+                                E allora, <b>cosa spinge una persona a piantare una vite 
+                                e a prendersene cura per sette anni, 
+                                sapendo che solo allora — forse, 
+                                se tutto sarà andato bene — potrà 
+                                finalmente raccoglierne i frutti?</b>
+                                Che cosa deve vedere uno attraverso quella vigna, ogni giorno, per rispettare quei sette anni di attesa? 
+                                <b>Che certezza bisogna avere per non mandare tutto all'aria dopo un giorno, un mese o un anno?</b>
+                                
+                                <figure class="text-center center-content">
+                                    <img class="center-image2" src="../../Images/_21_01301.jpg" alt="flowers">
+                                    <figcaption><i><br>Pero in fiore nelle Langhe.</i></figcaption>
+                                </figure>
+
+                                Sono passati tre anni da quel giorno a Vitorchiano. 
+                                Tre anni durante i quali avrei voluto scrivere queste parole più volte, 
+                                eppure non l'ho fatto. Per due anni, poi, non ho scritto articoli, anche se avevo il cuore inquieto.
+                                Oggi mi chiedo se anche questo tempo, 
+                                che tante volte avrei potuto giudicare come tempo perso, 
+                                non sia stato invece necessario. 
+                                Effettivamente, avevo iniziato a scrivere questo articolo pensando che avrebbe preso una certa direzione. Mentre scrivevo, invece, le parole mi hanno portato da un'altra parte. 
+                                <br>
+                                Un mese fa, un'amica mi ha inoltrato il <a href="https://shop.prodotticascinazza.it/blog/prodotti-monastici-curiosita/prodotti-monastici-oltre-il-gusto" target="_blank" rel="noopener noreferrer">sito</a> dei monaci della Cascinazza, dove si legge:
+                                <div style="margin-top:5px; margin-bottom: 5px; margin-left: 10px;margin-right: 15px;">
+                                    <i>
+                                        «Quando lavoriamo la terra o seguiamo la fermentazione della birra qui alla Cascinazza, non stiamo semplicemente “producendo”. Stiamo collaborando all’opera di Dio nel mondo e, insieme, costruendo noi stessi. Il lavoro manuale educa alla pazienza, ricorda che nulla si improvvisa e trasforma la fatica in positività.»
+                                    </i>
+                                </div>
+                                Ho ripensato a C., a quelle viti e all'attesa che a lei non sebrava affatto troppa.
+                                Forse il Signore si è servito di questi anni perché io potessi lavorare su qualcosa che allora avevo soltanto intravisto negli occhi di C. 
+                                Qualcosa che aveva a che fare con il modo di stare davanti alle cose: di prendersele a cuore, di averne cura, anche quando il frutto è ancora lontano e non c'è alcuna garanzia che arrivi.
+                                Anche questo significa amare: decidere che qualcosa merita il nostro tempo, la nostra cura e la nostra attesa, anche quando non sappiamo ancora che cosa ne verrà fuori.
+                                Riconosco che queste donne, che trascorrono tutta la vita dentro le quattro mura del monastero di Vitorchiano, ne sanno molto più di me su cosa significhi amare. 
+                                <b>Perché amano tutto, persino il lavoro, come si amano i figli</b>: non solo gli danno tempo — quello lo facciamo tutti — ma lo curano, lo aspettano e lo rispettano. 
+                                E perché, misteriosamente,  <b>in tutto quello che fanno riconoscono il segno di Dio.</b> 
+                                <br>Chissà come cambierebbe la mia vita, se nel lavoro avessi un poco della coscienza di queste donne.
+                            </p>
+                            
+                            <p style="margin-top:-5px">     
+                            </p>
+                    
+                            <div class="w3-row">
+                                <!--
+                                    <div class="w3-col m4 w3-hide-small">
+                                <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
+                                </div>
+                                -->
+                            </div>
+                        </div>
+
+                        <div style="padding-top: 40px; padding-bottom: 50px;" class="w3-container w3-center">
+    <!-- WhatsApp -->
+    <a href="https://wa.me/?text=Vita%20e%20vite%20-%20https%3A%2F%2Fmatteopicciolini.github.io%2Fmobius%2FPosts%2Fvita-e-vite%2F" target="_blank" class="w3-button w3-round-large w3-whatsapp">
+        <i style="font-size:25px; padding:3px" class="fa-brands fa-whatsapp"></i> 
+    </a>
+
+    <!-- Telegram -->
+    <a href="https://t.me/share/url?url=https%3A%2F%2Fmatteopicciolini.github.io%2Fmobius%2FPosts%2Fvita-e-vite%2F&text=Vita%20e%20vite" target="_blank" class="w3-button w3-round-large w3-telegram">
+        <i style="font-size:25px; padding:3px" class="fa-brands fa-telegram"></i> 
+    </a>
+
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmatteopicciolini.github.io%2Fmobius%2FPosts%2Fvita-e-vite%2F" target="_blank" class="w3-button w3-round-large w3-facebook">
+        <i style="font-size:25px; padding:3px" class="fa-brands fa-facebook"></i> 
+    </a>
+</div>
+                
+                    </div>
+                    <!-- END BLOG ENTRIES -->
+                </div>
+            </div>
+            <br>
+            <!-- END w3-content -->
+        </div>
+
+        <!-- Footer -->
+        <footer  style = "padding-top: 50px;" class="w3-container w3-theme-d1 w3-center w3-black">
+            <!--
+                <button class="w3-right w3-button w3-dark-grey w3-padding-large w3-margin-bottom">Next »</button>
+                <button class="w3-right w3-button w3-dark-grey w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+            -->
+            
+            <a class="w3-button w3-large w3-light-grey" href="https://www.facebook.com/matteo.picciolini.3" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a class="w3-button w3-large w3-light-grey" href="https://twitter.com/cciopi_py" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a class="w3-button w3-large w3-light-grey" href="https://www.instagram.com/cciopi.py/" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a class="w3-button w3-large w3-light-grey" href="https://github.com/matteopicciolini" title="Github"><i class="fa-brands fa-github"></i></a>
+
+            <!--<a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>-->
+
+            <p style = "font-size: 12px;">Powered by Matteo Picciolini </p>
+            <br>
+        </footer>
+    </body>
+</html>
